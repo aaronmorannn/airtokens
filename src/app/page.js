@@ -40,7 +40,7 @@ export default class Home extends React.Component {
       let coins = this.state.dataSource.map((val,key) =>{
           return <div className="cryptocurrency-market" key={key}>
           <h1 className='p-2'>
-            <span className='bg-sky-100 rounded p-1 font-semibold'>{val.rank}</span> 
+            <span className='bg-sky-100 rounded p-1 font-semibold dark:text-black dark:bg-white'>{val.rank}</span> 
             <a href={`http://www.google.com/search?q=${val.name} cryptocurrency`} className='underline font-semibold pl-4 pr-2 hover:text-blue-700 underline-offset-4'>{val.name}</a> 
             <span className='text-gray-500 font-semibold pl-2 pr-2'>({val.symbol}) </span>
             <span className=' pl-2 pr-2 text-green-500 font-semibold'>${val.price_usd}</span> 

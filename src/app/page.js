@@ -50,7 +50,7 @@ export default class Home extends React.Component {
 
     return (
       <main >
-        <h1 className='text-center bg-stone-100 font-white p-2 pb-2 font-semibold text-black'>Top 100 Cryptocurrencies  
+        <h1 className='text-center bg-stone-100 font-white p-2 pb-2 font-semibold text-black'>Lightweight Cryptocurrency Tracker 
           <span class="relative h-3 w-3 pl-2">
           <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75 pl-2"></span>
           <span class="relative inline-flex rounded-full h-3 w-3 bg-green-500 pl-2"></span>

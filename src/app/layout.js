@@ -4,8 +4,8 @@ import { Inter } from 'next/font/google'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
-  title: 'Top 100 Cryptocurrency Tracker',
-  description: 'Application that is tracking the Top 100 Cryptocurrencies, refreshing every 10 seconds.',
+  title: 'Lightweight Cryptocurrency Tracker',
+  description: 'Web Application that is tracking the Top 100 Cryptocurrencies, refreshing every 10 seconds.',
 }
 
 export default function RootLayout({ children }) {

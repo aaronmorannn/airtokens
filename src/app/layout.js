@@ -12,16 +12,19 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-    <Script async src="https://www.googletagmanager.com/gtag/js?id=G-2V69D91S50"></Script>
-    <Script>
-      {`
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-  
-        gtag('config', 'G-2V69D91S50');
-      `}
-    </Script>
+    <Script
+        src="https://www.googletagmanager.com/gtag/js?id=G-2V69D91S50"
+        strategy="afterInteractive"
+      />
+      <Script id="google-analytics" strategy="afterInteractive">
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){window.dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'G-2V69D91S50');
+        `}
+      </Script>
       <body className={inter.className}>{children}</body>
     </html>
   )

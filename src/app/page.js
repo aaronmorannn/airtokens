@@ -52,7 +52,7 @@ export default class Home extends React.Component {
 
     return (
       <main className='pb-8'>
-        <h1 className='text-center bg-stone-100 font-white p-2 pb-2 font-semibold text-black'>Lightweight Cryptocurrency Tracker 
+        <h1 className='text-center bg-stone-100 font-white p-2 pb-2 font-semibold text-black'>Lightweight Cryptocurrency Chart 
           <span class="relative h-3 w-3 pl-2">
           <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75 pl-2"></span>
           <span class="relative inline-flex rounded-full h-3 w-3 bg-green-500 pl-2"></span>
@@ -66,12 +66,11 @@ export default class Home extends React.Component {
             {
               this.state.dataSource.map((val,key) =>{
                 return <tr key={key}>
-
                   <td className='bg-[#248a3e] bg-opacity-10 font-semibold text-center'>{val.rank}</td> 
                   <td  className='underline font-semibold hover:text-[#003fdd] underline-offset-4 pl-4'><a href={`http://www.google.com/search?q=${val.name} cryptocurrency`}>{val.name}</a></td> 
-                  <td className='text-[#6c6c70] font-semibold pl-4'>({val.symbol}) </td>
-                  <td className='font-semibold pl-4'>${val.price_usd}</td> 
-                  <td className='pl-4'>{val.percent_change_24h > 0 ? <span className='text-[#248a3e] '>+{val.percent_change_24h}%</span> : <span className='text-[#d70015]'>{val.percent_change_24h}%</span>}</td>
+                  <td className='text-[#6c6c70] font-light pl-4'>({val.symbol}) </td>
+                  <td className='font-normal pl-4'>${val.price_usd}</td> 
+                  <td className='pl-4'>{val.percent_change_24h > 0 ? <span className='text-[#248a3e] '>{val.percent_change_24h}%</span> : <span className='text-[#d70015]'>{val.percent_change_24h}%</span>}</td>
                 </tr>
               })
             }

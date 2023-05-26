@@ -65,12 +65,14 @@ export default class Home extends React.Component {
           <tbody>
             {
               this.state.dataSource.map((val,key) =>{
-                return <tr key={key}>
-                  <td className='bg-[#248a3e] bg-opacity-10 font-semibold text-center'>{val.rank}</td> 
+                return <tr className='pb-4' key={key}>
+                {/* <tr> */}
+                  <td className='bg-[#0a84ff] bg-opacity-10 font-semibold text-center p-1.5'>{val.rank}</td> 
                   <td  className='underline font-semibold hover:text-[#003fdd] underline-offset-4 pl-4'><a href={`http://www.google.com/search?q=${val.name} cryptocurrency`}>{val.name}</a></td> 
-                  <td className='text-[#6c6c70] font-light pl-4'>({val.symbol}) </td>
+                  <td className='text-[#6c6c70] text-xs font-light pl-4'>({val.symbol}) </td>
                   <td className='font-normal pl-4'>${val.price_usd}</td> 
                   <td className='pl-4'>{val.percent_change_24h > 0 ? <span className='text-[#248a3e] '>{val.percent_change_24h}%</span> : <span className='text-[#d70015]'>{val.percent_change_24h}%</span>}</td>
+                  {/* </tr> */}
                 </tr>
               })
             }

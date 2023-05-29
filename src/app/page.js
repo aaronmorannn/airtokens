@@ -54,15 +54,20 @@ export default class Home extends React.Component {
 
     return (
       <main className='pb-8'>
-        <div className='text-center bg-stone-100 font-white p-2 pb-2 font-semibold text-black'>
-          <p>
-            Air Tokens 
-            <span class="relative h-3 w-3 pl-2">
-            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75 pl-2"></span>
-            <span class="relative inline-flex rounded-full h-3 w-3 bg-green-500 pl-2"></span>
-            </span>
-          </p>
-        </div>
+        <ul class="flex justify-between p-2">
+   
+          <li class="mr-1">
+            <p class="inline-block py-2 px-4 font-semibold text-black">Air Tokens
+              <span class="relative h-3 w-3 pl-2">
+              <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75 pl-2"></span>
+              <span class="relative inline-flex rounded-full h-3 w-3 bg-green-500 pl-2"></span>
+              </span>
+            </p>
+          </li>
+          <li class="mr-3">
+            <a class="inline-block py-2 px-4 font-semibold border border-green-100 bg-green-100 hover:border hover:border-green-400 backdrop-opacity-10 rounded" href="https://www.tiktok.com/@airtokens" target='_blank'>TikTok</a>
+          </li>
+        </ul>
 
         <div className='flex justify-center pt-2'>
         {/* <form className='w-1/3 max-sm:w-2/3 max-md:w-2/3'>   

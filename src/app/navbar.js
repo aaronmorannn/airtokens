@@ -5,6 +5,8 @@ import {FaTiktok} from 'react-icons/fa'
 
 const navigation = [
   { name: '🔥 Trending', href: 'trending', current: true },
+  { name: '👮 Jail', href: 'jail', current: true },
+  { name: '🪦 Graveyard', href: 'graveyard', current: true },
 ]
 
 function classNames(...classes) {
@@ -30,7 +32,7 @@ export default function Example() {
                 </Disclosure.Button>
               </div>
               <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
-                <div className="flex flex-shrink-0 items-center">
+                <div className="flex  items-center">
                   <p class="block font-semibold text-black"><a href="/">Air Tokens</a>
                     <span class="relative h-3 w-3 pl-2">
                     <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75 pl-2"></span>
@@ -45,7 +47,7 @@ export default function Example() {
                         key={item.name}
                         href={item.href}
                         className={classNames(
-                          item.current ? 'text-black' : '',
+                          item.current ? 'text-black hover:bg-slate-100' : '',
                           'rounded-md px-3 py-2 text-sm font-medium'
                         )}
                         aria-current={item.current ? 'page' : undefined}
@@ -69,14 +71,14 @@ export default function Example() {
           </div>
 
           <Disclosure.Panel className="sm:hidden">
-            <div className="space-y-1 px-2 pb-3 pt-2 bg-slate-50">
+            <div className="space-y-1 px-2 rounded-2xl pb-3 pt-2 shadow-lg">
               {navigation.map((item) => (
                 <Disclosure.Button
                   key={item.name}
                   as="a"
                   href={item.href}
                   className={classNames(
-                    item.current ? 'text-black' : 'text-gray-100 hover:bg-gray-100 hover:text-black',
+                    item.current ? 'text-black hover:bg-slate-50' : 'text-gray-100 hover:bg-gray-100 hover:text-black',
                     'block rounded-md px-3 py-2 text-base font-medium'
                   )}
                   aria-current={item.current ? 'page' : undefined}

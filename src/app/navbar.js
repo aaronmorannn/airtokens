@@ -32,7 +32,7 @@ export default function Example() {
                 </Disclosure.Button>
               </div>
               <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
-                <div className='pt-2'>
+                <div className='pt-2 max-sm:pb-2'>
                   <a href="/"><span class="relative flex h-5 w-5">
                     <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-500 opacity-75"></span>
                     <span class="relative inline-flex rounded-full h-5 w-5 bg-green-500"></span>

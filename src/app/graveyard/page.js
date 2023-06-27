@@ -15,7 +15,7 @@ export default function Trending() {
       </div>
 
       <div class="grid grid-cols-4 gap-4 pt-8 p-8 max-sm:grid-cols-1 max-md:grid-cols-2">
-        <div className='bg-slate-100 p-2 rounded-md'>
+        <div className='bg-slate-100 p-4 rounded-md'>
           <Image src='/ftx.png' height={150} width={150}/>
           <p className='text-sm'><strong>Name:</strong> FTX Trading Ltd</p>
           <p className='text-sm'><strong>Time of Death:</strong> November 2022</p>

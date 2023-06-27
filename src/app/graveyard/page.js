@@ -13,8 +13,8 @@ export default function Trending() {
         <p className='p-2 text-6xl'>🪦</p>
       </div>
 
-      <div class="grid grid-cols-4 gap-4 pt-8 max-sm:grid-cols-1 max-md:grid-cols-2">
-        <div className='bg-slate-100 p-4 rounded-md max-sm:items-center max-sm:text-center '>
+      <div class="grid grid-cols-4 gap-4 pt-8 max-sm:grid-cols-1 max-md:grid-cols-2 max-sm:p-4">
+        <div className='bg-slate-50 p-4 rounded-md max-sm:items-center max-sm:text-center '>
           <Image src='/ftx.png' height={150} width={150} className='max-sm:object-center max-sm:mx-auto'/>
           <p className='text-sm'><strong>Name:</strong> FTX Trading Ltd</p>
           <p className='text-sm'><strong>Time of Death:</strong> November 2022</p>
@@ -46,8 +46,8 @@ import { Fragment, useState } from 'react'
       <div className='pt-2'>
         <button
           onClick={openModal}
-          className='text-white p-1 rounded-md text-sm bg-slate-500 hover:bg-slate-600'
-        >
+          className="inline-flex justify-center rounded-md border border-transparent bg-green-100 px-4 py-2 text-sm font-medium text-green-900 hover:bg-green-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2"
+          >
           Cause of Death
         </button>
       </div>

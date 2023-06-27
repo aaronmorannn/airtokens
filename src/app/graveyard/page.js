@@ -5,16 +5,15 @@ import Head from 'next/head'
 
 export default function Trending() {
   return (
-    <main className='pt-10'>
+    <main className='mx-auto max-w-7xl px-2 sm:px-6 lg:px-8'>
       <Head>
         <title>Graveyard - Air Tokens</title>
       </Head>
       <div className='items-center text-center'>
-        <p className='p-2 text-4xl'>🪦</p>
-        <h1 className='text-2xl font-semibold'>Graveyard</h1>
+        <p className='p-2 text-6xl'>🪦</p>
       </div>
 
-      <div class="grid grid-cols-4 gap-4 pt-8 p-8 max-sm:grid-cols-1 max-md:grid-cols-2">
+      <div class="grid grid-cols-4 gap-4 pt-8 max-sm:grid-cols-1 max-md:grid-cols-2">
         <div className='bg-slate-100 p-4 rounded-md'>
           <Image src='/ftx.png' height={150} width={150}/>
           <p className='text-sm'><strong>Name:</strong> FTX Trading Ltd</p>

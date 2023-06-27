@@ -4,8 +4,7 @@ import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import {FaTiktok} from 'react-icons/fa'
 
 const navigation = [
-  { name: '🔥 Trending', href: 'trending', current: true },
-  { name: '👮 Jail', href: 'jail', current: true },
+  { name: '📈 Charts', href: '/', current: true },
   { name: '🪦 Graveyard', href: 'graveyard', current: true },
 ]
 

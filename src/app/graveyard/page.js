@@ -87,13 +87,13 @@ import { Fragment, useState } from 'react'
                   </Dialog.Title>
                   <div className="mt-2">
                     <p className="text-sm text-gray-500">
-                    FTX is a company that formerly operated a cryptocurrency exchange and crypto hedge fund. It was founded in 2019 by Sam Bankman-Fried and Gary Wang. However, in November 2022, FTX filed for bankruptcy and its chief executive, Sam Bankman-Fried, resigned. This happened after its rival and the world’s largest crypto exchange, Binance, pulled out of a deal to acquire the company.
+                    FTX is a company that formerly operated a cryptocurrency exchange and crypto hedge fund. It was founded in 2019 by Sam Bankman-Fried and Gary Wang. However, in November 2022, FTX filed for bankruptcy and its chief executive, Sam Bankman-Fried, resigned. This happened after its rival and the worlds largest crypto exchange, Binance, pulled out of a deal to acquire the company.
                     <br/><br/>
-                    The current CEO of FTX is John J. Ray III, who specializes in recovering funds from failed corporations. Speaking of its previous management, Ray stated: "Never in my career have I seen such a complete failure of corporate controls and such a complete absence of trustworthy financial information as occurred here." He added that "this situation is unprecedented."
+                    The current CEO of FTX is John J. Ray III, who specializes in recovering funds from failed corporations. Speaking of its previous management, Ray stated: &quot;Never in my career have I seen such a complete failure of corporate controls and such a complete absence of trustworthy financial information as occurred here.&quot; He added that &quot;this situation is unprecedented.&quot;
                     <br/><br/>
                     <br/>
                     FTX - Wikipedia. <a className='text-blue-500' href="https://en.wikipedia.org/wiki/FTX">https://en.wikipedia.org/wiki/FTX</a>.<br/>
-                    (2) Why Did FTX Collapse? Here’s What to Know. - The New York Times. <a  className='text-blue-500' href="https://www.nytimes.com/2022/11/10/technology/ftx-binance-crypto-explained.html">https://www.nytimes.com/2022/11/10/technology/ftx-binance-crypto-explained.html</a>.<br/>
+                    (2) Why Did FTX Collapse? What to Know. - The New York Times. <a  className='text-blue-500' href="https://www.nytimes.com/2022/11/10/technology/ftx-binance-crypto-explained.html">https://www.nytimes.com/2022/11/10/technology/ftx-binance-crypto-explained.html</a>.<br/>
                     (3) FTX: An Overview of the Exchange and Its Collapse - Investopedia. <a  className='text-blue-500' href="https://www.investopedia.com/ftx-exchange-5200842">https://www.investopedia.com/ftx-exchange-5200842</a>.<br/>
                     </p>
                   </div>
@@ -104,7 +104,7 @@ import { Fragment, useState } from 'react'
                       className="inline-flex justify-center rounded-md border border-transparent bg-green-100 px-4 py-2 text-sm font-medium text-green-900 hover:bg-green-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2"
                       onClick={closeModal}
                     >
-                      I've read enough
+                      Thanks, bye
                     </button>
                   </div>
                 </Dialog.Panel>

@@ -52,18 +52,18 @@ export default class Home extends React.Component {
       });
 
     return (
-      <main className='pb-8'>
+      <main className='pb-2'>
         <div className='flex justify-center pt-8'>
         <table class="table-auto md:table-fixed max-sm:table-auto max-sm:text-sm max-sm:p-8 ">
   
           <tbody>
             {
               this.state.dataSource.map((val,key) =>{
-                return <tr className='p-4' key={key}>
-                  <td  className='underline p-2 font-semibold hover:text-blue-600 underline-offset-4 pl-4'><a href={`http://www.google.com/search?q=${val.name} cryptocurrency`}>{val.name}</a></td> 
-                  <td className='text-[#6c6c70] p-2 text-xs font-light pl-4'>({val.symbol}) </td>
-                  <td className='font-normal pl-4 p-2'>${val.price_usd}</td> 
-                  <td className='pl-4 p-2'>{val.percent_change_24h > 0 ? <span className='text-[#248a3e] '>▲{val.percent_change_24h}%</span> : <span className='text-[#d70015]'>▼{val.percent_change_24h}%</span>}</td>
+                return <tr className='pb-2' key={key}>
+                  <a href={`http://www.google.com/search?q=${val.name} cryptocurrency`}><span className='font-medium text-sm hover:text-slate-500 underline-offset-4 bg-slate-100 p-2 hover:bg-slate-200 rounded-md'>{val.name}</span></a>
+                  <td className='text-[#6c6c70] text-sm font-light pl-4'>({val.symbol}) </td>
+                  <td className='font-normal text-sm'>${val.price_usd}</td> 
+                  <td className='pl-4 p-2 text-sm'>{val.percent_change_24h > 0 ? <span className='text-[#248a3e] '>▲{val.percent_change_24h}%</span> : <span className='text-[#d70015]'>▼{val.percent_change_24h}%</span>}</td>
                 </tr>
               })
             }

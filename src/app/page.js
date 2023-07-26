@@ -52,7 +52,7 @@ export default class Home extends React.Component {
       });
 
     return (
-      <main className='flex justify-center items-center pb-2 '>
+      <main className='flex justify-center items-center pb-2 max-sm:p-4'>
         <table class="table-auto md:table-fixed max-sm:table-auto max-sm:text-sm">
           <tbody>
             {

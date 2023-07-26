@@ -8,13 +8,13 @@ function classNames(...classes) {
 
 export default function Example() {
   return (
-    <Disclosure as="nav" className="">
+    <Disclosure as="nav" className="sticky top-0 bg-white p-1">
       {({ open }) => (
         <>
-          <div className="mx-auto max-w-md pb-4">
-            <div className="relative flex h-16 items-center justify-between">
+          <div className=" mx-auto pb-4 ">
+            <div className=" flex h-4 pt-2 items-center justify-between">
               <div className="flex flex-1 items-center justify-center ">
-                <div className='pt-2 max-sm:pb-2 flex '>
+                <div className='max-sm:pb-2 pt-4 flex '>
                   <a href="/"><span class="relative flex h-5 w-5">
                     <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-500 opacity-75"></span>
                     <span class="relative inline-flex rounded-full h-5 w-5 bg-green-500"></span>

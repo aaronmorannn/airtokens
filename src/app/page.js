@@ -40,7 +40,7 @@ export default class Home extends React.Component {
       // DATA TAKES 10 SECONDS TO UPDATE
       let coins = this.state.dataSource.map((val,key) =>{
           return <div className="cryptocurrency-market" key={key}>
-          <h1 className='p-2'>
+          <h1 className=''>
             <span className='bg-sky-100 rounded p-1 font-semibold'>{val.rank}</span> 
             <a href={`http://www.google.com/search?q=${val.name} cryptocurrency`} className='underline font-semibold pl-4 pr-2 hover:text-blue-500 underline-offset-4'>{val.name}</a> 
             <span className='text-gray-500 font-semibold pl-2 pr-2'>({val.symbol}) </span>
@@ -52,10 +52,8 @@ export default class Home extends React.Component {
       });
 
     return (
-      <main className='pb-2'>
-        <div className='flex justify-center pt-8'>
-        <table class="table-auto md:table-fixed max-sm:table-auto max-sm:text-sm max-sm:p-8 ">
-  
+      <main className='flex justify-center items-center pb-2 '>
+        <table class="table-auto md:table-fixed max-sm:table-auto max-sm:text-sm">
           <tbody>
             {
               this.state.dataSource.map((val,key) =>{
@@ -68,11 +66,8 @@ export default class Home extends React.Component {
               })
             }
           </tbody>
-          </table>
-          
-        </div>
+        </table>     
       </main>
-      
     );
     }
   }

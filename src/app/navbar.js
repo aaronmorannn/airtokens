@@ -4,7 +4,6 @@ import { Disclosure } from '@headlessui/react'
 export default function Example() {
   return (
     <Disclosure as="nav" className="sticky top-0 bg-white p-1 bg-opacity-80 backdrop-blur-lg backdrop-filter border-b">
-      {({ open }) => (
         <>
           <div className=" mx-auto pb-7">
             <div className=" flex h-4 pt-2">
@@ -20,7 +19,6 @@ export default function Example() {
           </div>
 
         </>
-      )}
     </Disclosure>
   )
 }

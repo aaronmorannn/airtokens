@@ -58,9 +58,9 @@ export default class Home extends React.Component {
             {
               this.state.dataSource.map((val,key) =>{
                 return <tr className='border-b hover:bg-gray-100' key={key}>
-                  <td className='font-medium text-sm pl-4'><a href={`http://www.google.com/search?q=${val.name} cryptocurrency`} className='hover:text-green-500 lg:text-6xl md:text-4xl sm:text-2xl max-sm:text-xl'>{val.name}</a></td>
-                  <td className='font-normal lg:text-6xl align-middle md:text-4xl sm:text-2xl max-sm:text-xl pl-4'>${val.price_usd}</td> 
-                  <td className='pl-4 p-2 text-sm align-middle md:text-4xl lg:text-6xl sm:text-2xl max-sm:text-xl'>{val.percent_change_24h > 0 ? <span className='text-[#248a3e]'>{val.percent_change_24h}%</span> : <span className='text-[#d70015]'>{val.percent_change_24h}%</span>}</td>
+                  <td className=' text-sm pl-4 border-r'><a href={`http://www.google.com/search?q=${val.name} cryptocurrency`} className='hover:text-green-500 lg:text-4xl md:text-4xl sm:text-2xl max-sm:text-xl'>{val.name}</a></td>
+                  <td className='text-black lg:text-4xl align-middle border-r md:text-4xl sm:text-2xl max-sm:text-xl pl-4'>${val.price_usd}</td> 
+                  <td className='pl-4 p-2 text-sm align-middle md:text-4xl lg:text-4xl sm:text-2xl max-sm:text-xl'>{val.percent_change_24h > 0 ? <span className='text-[#248a3e]'>{val.percent_change_24h}%</span> : <span className='text-[#d70015]'>{val.percent_change_24h}%</span>}</td>
                 </tr>
               })
             }

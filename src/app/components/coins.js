@@ -3,6 +3,8 @@ import React, { useEffect, useState } from "react";
 export default function GetCoins() {
   const coins_url = "https://api.coinlore.com/api/tickers/";
   const [data, setData] = useState([]);
+  const [searchTerm, setSearchTerm] = useState("");
+  const [searchResults, setSearchResults] = useState([]);
 
   const fetchInfo = () => {
     return fetch(coins_url)
@@ -11,13 +13,28 @@ export default function GetCoins() {
   }
 
   useEffect(() => {
+    const filteredResults = data.filter((coin) =>
+      coin.name.toLowerCase().includes(searchTerm.toLowerCase())
+      );
+    
+    setSearchResults(filteredResults)
+  }, [searchTerm, data]);
+
+  useEffect(() => {
     fetchInfo();
   }, []);
 
   return (
     <main>
-      <table className="table-auto w-full md:table-fixed max-sm:table-auto max-sm:text-sm">     
-        {data.map((val) => (
+      <input
+        type="text"
+        placeholder="Search"
+        className="p-4 w-full h-20 text-green-500 lg:text-4xl md:text-4xl sm:text-2xl max-sm:text-xl border-b outline-none"
+        value={searchTerm}
+        onChange={(e) => setSearchTerm(e.target.value)}
+      />
+      <table className="table-auto w-full md:table-fixed max-sm:table-auto max-sm:text-sm">
+        {(searchTerm ? searchResults : data).map((val) => (
           <tbody key={val.id}>
             <tr className='border-b hover:bg-gray-100' >
                 <td className=' text-sm pl-4 border-r'><a href={`http://www.google.com/search?q=${val.name} cryptocurrency`} className='hover:text-green-500 lg:text-4xl md:text-4xl sm:text-2xl max-sm:text-xl'>{val.name}</a></td>

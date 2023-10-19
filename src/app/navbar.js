@@ -1,10 +1,9 @@
 "use client"
-import { Disclosure } from '@headlessui/react'
 import Link from 'next/link'
 
 export default function Navbar() {
   return (
-    <Disclosure as="nav" className="sticky top-0 bg-white p-1 bg-opacity-80 backdrop-blur-lg backdrop-filter border-b">
+    <div as="nav" className="sticky top-0 bg-white p-1 bg-opacity-80 backdrop-blur-lg backdrop-filter border-b">
       <div className="mx-auto pb-7">
         <div className="flex h-4 pt-2">
           <div className="max-sm:pb-2 pl-4 flex">
@@ -17,6 +16,6 @@ export default function Navbar() {
           </div>
         </div>
       </div>
-    </Disclosure>
+    </div>
   )
 }

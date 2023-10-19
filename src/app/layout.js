@@ -1,6 +1,5 @@
 import './globals.css'
 import { Inter } from 'next/font/google'
-import Script from 'next/script'
 import Head from 'next/head';
 import Navbar from './navbar'
 
@@ -21,19 +20,6 @@ export default function RootLayout({ children }) {
         <meta name="robots" content="noindex"/>
         <link rel="icon" type="image/x-icon" href="/favicon.ico"/>
       </Head>
-      <Script
-          src="https://www.googletagmanager.com/gtag/js?id=G-2V69D91S50"
-          strategy="afterInteractive"
-        />
-        <Script id="google-analytics" strategy="afterInteractive">
-          {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){window.dataLayer.push(arguments);}
-            gtag('js', new Date());
-
-            gtag('config', 'G-2V69D91S50');
-          `}
-      </Script>
       <body className={inter.className}>      
         <Navbar/>
         {children}

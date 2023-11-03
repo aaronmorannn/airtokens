@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 
 export default function GetCoins() {
-  const coins_url = "https://api.coinlore.com/api/tickers/";
+  const coins_url = "https://api.coinlore.net/api/tickers/";
   const [data, setData] = useState([]);
   const [searchTerm, setSearchTerm] = useState("");
   const [searchResults, setSearchResults] = useState([]);
